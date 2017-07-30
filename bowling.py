@@ -24,7 +24,7 @@ def score(game):  # Count score for a bowling game.
         print('Wrong input! Please type in: numbers 1-9 for score, "X" for strike or "/" for spare!')
 
 
-def check_if_last_round(frame_index, game, frame, result):
+def check_if_last_round(frame_index, game, frame, result):  # Check if the frame is the last one and count score accordingly.
     if frame_index < 10 and get_value(game[frame]) == 10:
         if is_spare(game[frame]):
             result += get_value(game[frame+1])
